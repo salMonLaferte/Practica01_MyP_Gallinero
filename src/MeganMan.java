@@ -1,6 +1,6 @@
-public class Dittuu extends Peleador implements Transformable{
-    
-    public Dittuu(int vida, FormaDePelear transformacion) {
+public class MeganMan extends Peleador implements Transformable {
+
+    public MeganMan(int vida, FormaDePelear transformacion) {
         super(vida, transformacion);
         //TODO Auto-generated constructor stub
     }
@@ -9,5 +9,6 @@ public class Dittuu extends Peleador implements Transformable{
     public void cambiaTransformacion(FormaDePelear t) {
        transformacion = t;
     }
+    
     
 }

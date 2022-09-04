@@ -1,3 +1,3 @@
 public interface Transformable {
-    public void cambiaTransformacion();
+    public void cambiaTransformacion( FormaDePelear t);
 }
