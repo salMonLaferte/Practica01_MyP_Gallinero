@@ -25,4 +25,15 @@ public class Peleador {
     public void ejecutarDefensa(Peleador atacante,int fuerza){
         transformacion.ejecutarDefensa(atacante, fuerza);
     }
+
+    /**
+     * 
+     */
+    public void reducirVida(int cantidad){
+        vida -= cantidad;
+        if( vida <= 0 )
+        {
+            //Hacer algo que avise al controlador
+        }
+    }
 }
