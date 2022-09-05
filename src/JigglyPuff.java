@@ -6,7 +6,6 @@ public class JigglyPuff extends DittuuTransformacion implements FormaDePelear  {
     
     public JigglyPuff(int ataqueBase, int defensaBase) {
         super(ataqueBase, defensaBase);
-        //TODO Auto-generated constructor stub
     }
 
     public void setPeleadorBase( Peleador p){

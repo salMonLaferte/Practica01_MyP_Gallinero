@@ -12,5 +12,9 @@ public class Transformacion {
         this.defensaBase = defensaBase;
     }
 
+    public void establecerPeleadorBase(Peleador peleador){
+        personajeBase = peleador;
+    }
+
     
 }
