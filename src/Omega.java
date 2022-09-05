@@ -2,13 +2,8 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Omega extends MeganManTransformacion implements FormaDePelear {
 
-    public Omega(int ataqueBase, int defensaBase) {
-        super(ataqueBase, defensaBase);
-        // TODO Auto-generated constructor stub
-    }
-
-    public void setPeleadorBase(Peleador p) {
-        personajeBase = p;
+    public Omega() {
+        super();
     }
 
     @Override

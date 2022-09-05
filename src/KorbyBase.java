@@ -3,8 +3,8 @@
  */
 public class KorbyBase extends Transformacion implements FormaDePelear {
 
-    public KorbyBase(int ataqueBase, int defensaBase) {
-        super(ataqueBase, defensaBase);
+    public KorbyBase() {
+        super();
     }
 
     @Override

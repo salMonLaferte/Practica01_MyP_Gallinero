@@ -1,15 +1,7 @@
-public class Korby extends Peleador implements Transformable {
-
-
+public class Korby extends Peleador{
 
     public Korby(int vida, FormaDePelear transformacion) {
         super(vida, transformacion);
+        nombre = "Korby";
     }
-
-    @Override
-    public void cambiaTransformacion(FormaDePelear t) {
-       formaDePelear = t;
-    }
-    
-    
 }

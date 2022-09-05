@@ -2,13 +2,8 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Mimikyu extends DittuuTransformacion implements FormaDePelear {
 
-    public Mimikyu(int ataqueBase, int defensaBase) {
-        super(ataqueBase, defensaBase);
-        // TODO Auto-generated constructor stub
-    }
-
-    public void setPeleadorBase(Peleador p) {
-        personajeBase = p;
+    public Mimikyu() {
+        super();
     }
 
     @Override

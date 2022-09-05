@@ -2,12 +2,9 @@ import java.util.Random;
 
 public class Bass extends MeganManTransformacion implements FormaDePelear{
 
-    public Bass(int ataqueBase, int defensaBase) {
-        super(ataqueBase, defensaBase);
+    public Bass() {
+        super();
 
-    }
-    public void setPeleadorBase(Peleador p) {
-        personajeBase = p;
     }
 
     @Override

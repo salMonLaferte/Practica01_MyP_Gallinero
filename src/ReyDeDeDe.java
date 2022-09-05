@@ -2,13 +2,8 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class ReyDeDeDe extends KorbyTransformacion implements FormaDePelear {
 
-    public ReyDeDeDe(int ataqueBase, int defensaBase) {
-        super(ataqueBase, defensaBase);
-        // TODO Auto-generated constructor stub
-    }
-
-    public void setPeleadorBase(Peleador p) {
-        personajeBase = p;
+    public ReyDeDeDe() {
+        super();
     }
 
     @Override

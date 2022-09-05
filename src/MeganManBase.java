@@ -1,7 +1,7 @@
 public class MeganManBase extends Transformacion implements FormaDePelear {
 
-    public MeganManBase(int ataqueBase, int defensaBase) {
-        super(ataqueBase, defensaBase);
+    public MeganManBase() {
+        super();
     }
 
     @Override

@@ -2,14 +2,10 @@ import java.util.Random;
 
 public class MetaKnight extends KorbyTransformacion implements FormaDePelear{
 
-    public MetaKnight(int ataqueBase, int defensaBase) {
-        super(ataqueBase, defensaBase);
+    public MetaKnight() {
+        super();
     }
     
-    public void setPeleadorBase(Peleador p) {
-        personajeBase = p;
-    }
-
     @Override
     public int ejecutarAtaque(Peleador objetivo) {
         Random rand = new Random();
