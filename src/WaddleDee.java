@@ -2,13 +2,8 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class WaddleDee extends KorbyTransformacion implements FormaDePelear {
 
-    public WaddleDee(int ataqueBase, int defensaBase) {
-        super(ataqueBase, defensaBase);
-        // TODO Auto-generated constructor stub
-    }
-
-    public void setPeleadorBase(Peleador p) {
-        personajeBase = p;
+    public WaddleDee() {
+        super();
     }
 
     @Override

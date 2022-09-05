@@ -2,9 +2,8 @@ import java.util.Random;
 
 public class Zero extends MeganManTransformacion implements FormaDePelear{
 
-    public Zero(int ataqueBase, int defensaBase) {
-        super(ataqueBase, defensaBase);
-
+    public Zero() {
+        super();
     }
     public void setPeleadorBase(Peleador p) {
         personajeBase = p;

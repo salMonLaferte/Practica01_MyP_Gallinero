@@ -1,7 +1,7 @@
 public class DittuuBase extends Transformacion implements FormaDePelear {
 
-    public DittuuBase(int ataqueBase, int defensaBase) {
-        super(ataqueBase, defensaBase);
+    public DittuuBase() {
+        super();
     }
 
     @Override
