@@ -14,32 +14,37 @@ public class Zero extends MeganManTransformacion implements FormaDePelear{
     public int ejecutarAtaque(Peleador objetivo) {
         Random rand = new Random();
         float numeroAleatorio = rand.nextFloat();
+        int fuerza = 1;
 
         if (numeroAleatorio > .3f) {
-            Bitacora.registerEvent(personajeBase, "¡¡Zero ataca con la espada Sigma, porque no sabes demostrar!!");
-            Bitacora.registerEvent(personajeBase, "Daño de ataque: " + 55);
-            return 40;
+            Bitacora.registerEvent(personajeBase, "¡¡Mega Man-Zero ataca con la espada Sigma, porque no sabes demostrar!!");
+            fuerza = 40;
+            Bitacora.registerEvent(personajeBase, "Repercusion de ataque: " + fuerza);
+            
         } else if (numeroAleatorio < .3f && numeroAleatorio > .1f) {
-            Bitacora.registerEvent(personajeBase, "¡¡Zero hace el ataque lightning, aventando muchos rayos laser!!");
-            Bitacora.registerEvent(personajeBase, "Daño de ataque: " + 35);
-            return 25;
+            Bitacora.registerEvent(personajeBase, "¡¡Mega Man-Zero hace el ataque lightning, aventando muchos rayos laser!!");
+            fuerza = 25;
+            Bitacora.registerEvent(personajeBase, "Repercusion de ataque: " + fuerza);
+
         } else {
-            Bitacora.registerEvent(personajeBase, "¡¡Zero hace el ataque W-Shredder, creandote la ilusion de estar con ella!!");
-            Bitacora.registerEvent(personajeBase, "Daño de ataque: " + 15);
-            return 30;
+            Bitacora.registerEvent(personajeBase, "¡¡Mega Man-Zero hace el ataque W-Shredder, creandote la ilusion de estar con ella!!");
+            fuerza = 30;
+            Bitacora.registerEvent(personajeBase, "Repercusion de ataque: " + fuerza);
+
         }
+        return fuerza;
     }
 
     @Override
     public void ejecutarDefensa(Peleador atacante, int fuerza) {
         Bitacora.registerEvent(personajeBase, "Zero se defiende con su traje resistente");
 
-        int daño = fuerza - 2;
-        if(daño <= 0){
-            daño = 1;
+        int golpeRecibido = fuerza - 2;
+        if(golpeRecibido <= 0){
+            golpeRecibido = 1;
         }
-        personajeBase.reducirVida(daño);
-        Bitacora.registerEvent(personajeBase, "Perdió" + daño + "puntos de vida");
+        personajeBase.reducirVida(golpeRecibido);
+        Bitacora.registerEvent(personajeBase, "Perdió" + golpeRecibido + "puntos de vida");
    
         
     }
