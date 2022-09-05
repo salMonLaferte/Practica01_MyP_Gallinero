@@ -5,11 +5,9 @@ public class Evee extends DittuuTransformacion implements FormaDePelear {
     public Evee(int ataqueBase, int defensaBase) {
         super(ataqueBase, defensaBase);
     }
-
     public void setPeleadorBase(Peleador p) {
         personajeBase = p;
     }
-
     @Override
     public int ejecutarAtaque(Peleador objetivo) {
         Random rand = new Random();
@@ -44,6 +42,6 @@ public class Evee extends DittuuTransformacion implements FormaDePelear {
             golpeRecibido = 1;
         }
         personajeBase.reducirVida(golpeRecibido);
-        Bitacora.registerEvent(personajeBase, "Perdió" + golpeRecibido + "puntos de vida");
+        Bitacora.registerEvent(personajeBase, "Perdió " + golpeRecibido + " puntos de vida");
     }
 }

@@ -6,7 +6,7 @@ public class JigglyPuff extends DittuuTransformacion implements FormaDePelear  {
     
     public JigglyPuff(int ataqueBase, int defensaBase) {
         super(ataqueBase, defensaBase);
-        //TODO Auto-generated constructor stub
+
     }
 
     public void setPeleadorBase( Peleador p){
@@ -17,34 +17,38 @@ public class JigglyPuff extends DittuuTransformacion implements FormaDePelear  {
     public int ejecutarAtaque(Peleador objetivo) {
         Random rand = new Random();
         float numeroAleatorio = rand.nextFloat();
+        int fuerza = 1;
         
-        if( numeroAleatorio >.3f )
-        {
-            //tira un ataque
-            Bitacora.registerEvent(personajeBase, "Empezó cantando bien bonito");
-            Bitacora.registerEvent(personajeBase, " " + 40 );
-            return 10;
+        if( numeroAleatorio >.3f ){
+
+            Bitacora.registerEvent(personajeBase, "Dittuu-JigglyPuff empezo cantando bien bonito");
+            fuerza = 20;
+            Bitacora.registerEvent(personajeBase, " " + fuerza );
+
+        }else{
+            Bitacora.registerEvent(personajeBase, "Dittuu-JigglyPuff ataca durmiendote, como tu clase de matematicas");
+            fuerza = 40;
+            Bitacora.registerEvent(personajeBase, " " + fuerza );
         }
-        else{
-            //mejor tira otro ataque
-            return 3;
-        }
+        return fuerza;
     }
 
 
     /**
-     * Aqui vamos a hacer el calculo de daño.
-     * Siempre se reciba alemnos 1 de daño.
+     * Aqui vamos a hacer el calculo de golpeRecibido.
+     * Siempre se reciba alemnos 1 de golpeRecibido.
      */
     @Override
     public void ejecutarDefensa(Peleador atacante, int fuerza) {
-        Bitacora.registerEvent(personajeBase, "Se prepara para defenderse"); 
-        Bitacora.registerEvent(personajeBase, "Se defendió chido");
-        int daño =  fuerza -2;
-        if(daño <= 0)
-            daño = 1;
-        personajeBase.reducirVida(daño);
-        Bitacora.registerEvent(personajeBase, "Perdió " + daño + " puntos de vida");//termine
+        Bitacora.registerEvent(personajeBase, "Dittuu-JigglyPuff se prepara para defenderse"); 
+
+        int golpeRecibido =  fuerza - 2;
+        if(golpeRecibido <= 0){
+            golpeRecibido = 1;
+        }
+
+        personajeBase.reducirVida(golpeRecibido);
+        Bitacora.registerEvent(personajeBase, "Perdió " + golpeRecibido + " puntos de vida");//termine
     }
     
 

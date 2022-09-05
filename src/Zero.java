@@ -44,7 +44,7 @@ public class Zero extends MeganManTransformacion implements FormaDePelear{
             golpeRecibido = 1;
         }
         personajeBase.reducirVida(golpeRecibido);
-        Bitacora.registerEvent(personajeBase, "Perdió" + golpeRecibido + "puntos de vida");
+        Bitacora.registerEvent(personajeBase, "Perdió " + golpeRecibido + " puntos de vida");
    
         
     }
