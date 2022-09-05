@@ -1,13 +1,13 @@
-public class Dittuu extends Peleador implements Transformable{
-    
+public class Dittuu extends Peleador implements Transformable {
+
     public Dittuu(int vida, FormaDePelear transformacion) {
         super(vida, transformacion);
-        //TODO Auto-generated constructor stub
+        // TODO Auto-generated constructor stub
     }
 
     @Override
     public void cambiaTransformacion(FormaDePelear t) {
-       transformacion = t;
+        transformacion = t;
     }
-    
+
 }
