@@ -14,20 +14,22 @@ public class Bass extends MeganManTransformacion implements FormaDePelear{
     public int ejecutarAtaque(Peleador objetivo) {
         Random rand = new Random();
         float numeroAleatorio = rand.nextFloat();
+        int fuerza = 1;
 
         if (numeroAleatorio > .3f) {
             Bitacora.registerEvent(personajeBase, "¡¡Bass ataca con su buster repetidamente!!");
-            Bitacora.registerEvent(personajeBase, "Daño de ataque: " + 45);
-            return 40;
+            fuerza = 45;
+            Bitacora.registerEvent(personajeBase, "Daño de ataque: " + fuerza);
         } else if (numeroAleatorio < .3f && numeroAleatorio > .1f) {
             Bitacora.registerEvent(personajeBase, "¡¡Bass acaba de saltar doble y dispararte!!");
-            Bitacora.registerEvent(personajeBase, "Daño de ataque: " + 35);
-            return 25;
+            fuerza = 35;
+            Bitacora.registerEvent(personajeBase, "Daño de ataque: " + fuerza);
         } else {
             Bitacora.registerEvent(personajeBase, "¡¡Bass acaba de copiar el poder de tu maestra, esta rotisimo!!");
-            Bitacora.registerEvent(personajeBase, "Daño de ataque: " + 15);
-            return 30;
+            fuerza = 15;
+            Bitacora.registerEvent(personajeBase, "Daño de ataque: " + fuerza);
         }
+        return fuerza;
     }
 
     @Override
