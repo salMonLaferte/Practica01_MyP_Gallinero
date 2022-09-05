@@ -7,7 +7,7 @@ public class MeganMan extends Peleador implements Transformable {
 
     @Override
     public void cambiaTransformacion(FormaDePelear t) {
-       transformacion = t;
+       formaDePelear = t;
     }
     
     

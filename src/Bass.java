@@ -17,6 +17,7 @@ public class Bass extends MeganManTransformacion implements FormaDePelear{
         int fuerza = 1;
 
         if (numeroAleatorio > .3f) {
+
             Bitacora.registerEvent(personajeBase, "¡¡Mega Man-Bass ataca con su buster repetidamente!!");
             fuerza = 45;
             Bitacora.registerEvent(personajeBase, "Repercusion de ataque: " + fuerza);
