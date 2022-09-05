@@ -2,12 +2,9 @@ import java.util.Random;
 
 public class Bass extends MeganManTransformacion implements FormaDePelear{
 
-    public Bass(int ataqueBase, int defensaBase) {
-        super(ataqueBase, defensaBase);
+    public Bass() {
+        super();
 
-    }
-    public void setPeleadorBase(Peleador p) {
-        personajeBase = p;
     }
 
     @Override
@@ -17,6 +14,7 @@ public class Bass extends MeganManTransformacion implements FormaDePelear{
         int fuerza = 1;
 
         if (numeroAleatorio > .3f) {
+
             Bitacora.registerEvent(personajeBase, "¡¡Mega Man-Bass ataca con su buster repetidamente!!");
             fuerza = 45;
             Bitacora.registerEvent(personajeBase, "Repercusion de ataque: " + fuerza);

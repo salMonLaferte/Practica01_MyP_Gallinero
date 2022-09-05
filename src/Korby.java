@@ -1,16 +1,7 @@
-public class Korby extends Peleador implements Transformable {
-
-
+public class Korby extends Peleador{
 
     public Korby(int vida, FormaDePelear transformacion) {
         super(vida, transformacion);
-        //TODO Auto-generated constructor stub
+        nombre = "Korby";
     }
-
-    @Override
-    public void cambiaTransformacion(FormaDePelear t) {
-       transformacion = t;
-    }
-    
-    
 }

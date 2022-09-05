@@ -2,12 +2,10 @@ import java.util.Random;
 
 public class Evee extends DittuuTransformacion implements FormaDePelear {
 
-    public Evee(int ataqueBase, int defensaBase) {
-        super(ataqueBase, defensaBase);
+    public Evee() {
+        super();
     }
-    public void setPeleadorBase(Peleador p) {
-        personajeBase = p;
-    }
+
     @Override
     public int ejecutarAtaque(Peleador objetivo) {
         Random rand = new Random();
