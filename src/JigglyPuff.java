@@ -43,10 +43,12 @@ public class JigglyPuff extends DittuuTransformacion implements FormaDePelear  {
         int daño =  fuerza -2;
         if(daño <= 0)
             daño = 1;
-        personajeBase.vida -= daño;
+        personajeBase.reducirVida(daño);
         Bitacora.registerEvent(personajeBase, "Perdió " + daño + " puntos de vida");//termine
     }
     
+
+
 
 
 }

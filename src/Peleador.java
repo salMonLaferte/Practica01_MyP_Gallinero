@@ -1,11 +1,11 @@
 
 public class Peleador {
     protected int vida = 100;
-    protected FormaDePelear transformacion;
+    protected FormaDePelear formaDePelear;
 
     public Peleador(int vida, FormaDePelear transformacion){
         this.vida = vida;
-        this.transformacion = transformacion;
+        this.formaDePelear = transformacion;
     }
 
     /**
@@ -13,7 +13,7 @@ public class Peleador {
      * @param objetivo
      */
     public void ejecutarAtaque(Peleador objetivo){
-        int fuerza = transformacion.ejecutarAtaque(objetivo);
+        int fuerza = formaDePelear.ejecutarAtaque(objetivo);
         objetivo.ejecutarDefensa(objetivo, fuerza);
     }
 
@@ -23,6 +23,17 @@ public class Peleador {
      * @param fuerza
      */
     public void ejecutarDefensa(Peleador atacante,int fuerza){
-        transformacion.ejecutarDefensa(atacante, fuerza);
+        formaDePelear.ejecutarDefensa(atacante, fuerza);
+    }
+
+    /**
+     * 
+     */
+    public void reducirVida(int cantidad){
+        vida -= cantidad;
+        if( vida <= 0 )
+        {
+            //Hacer algo que avise al controlador
+        }
     }
 }
