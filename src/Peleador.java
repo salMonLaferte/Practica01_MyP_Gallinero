@@ -1,6 +1,9 @@
 
 import java.util.Random;
-
+/**
+ * Representacion de un peleador que puede adquirir
+ * una forma de pelear.
+ */
 public class Peleador {
     protected int vida = 100;
     protected FormaDePelear formaDePelear;
@@ -12,8 +15,8 @@ public class Peleador {
     }
 
     /**
-     * Ataca al peleador objetivo
-     * @param objetivo
+     * Ataca al peleador objetivo y ejecuta la defensa del peleador objetivo.
+     * @param objetivo Peleador enemigo.
      */
     public void ejecutarAtaque(Peleador objetivo){
         int fuerza = formaDePelear.ejecutarAtaque(objetivo);
@@ -21,25 +24,38 @@ public class Peleador {
     }
 
     /**
-     * Se defiende de atacante, que lo ataca con tal fuerza
-     * @param atacante
-     * @param fuerza
+     * Se defiende de atacante, que lo ataca con tal fuerza.
+     * @param atacante Peleador que realizó el ataque.
+     * @param fuerza Valor de ataque del atacante.
      */
     public void ejecutarDefensa(Peleador atacante,int fuerza){
         formaDePelear.ejecutarDefensa(atacante, fuerza);
     }
 
     /**
-     * 
+     * Reduce la vida del peleador
+     * @param cantidad Cantidad de vida a reducir.
      */
     public void reducirVida(int cantidad){
         vida -= cantidad;
     }
 
+    /*
+     *Regresa el nombre del peleador.
+     */
+    public String obtenerNombre(){
+        return nombre;
+    }
+
+    /**
+     * Asigna una transformacion aleatoria al peleador
+     * de manera que dicha transformacion corresponda a su franquicia.
+     */
     public void cambiaTransformacion(){
         Random rand = new Random();
         float numeroAleatorio = rand.nextFloat();
-        if(numeroAleatorio <.3){
+        //Asigna cada una de las respectivas transformaciones con probabilidad 1/3
+        if(numeroAleatorio <.33){
             if(this instanceof Korby){
                 WaddleDee waddleDee = new WaddleDee();
                 formaDePelear = waddleDee;
@@ -59,7 +75,7 @@ public class Peleador {
                 Bitacora.registerEvent(this, "Dittuu se ha comido una Evee-sopa");
             }
         }
-        else if(numeroAleatorio <.6){
+        else if(numeroAleatorio <.66){
             if(this instanceof Korby){
                 ReyDeDeDe reyDeDeDe = new ReyDeDeDe();
                 formaDePelear = reyDeDeDe;
