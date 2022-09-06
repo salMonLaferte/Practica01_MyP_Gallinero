@@ -3,12 +3,12 @@ import java.io.FileNotFoundException;
 /**
  * Espectador concreto
  */
-public class EspectadorMonse extends Espectador implements Observador {
-    
-    public EspectadorMonse(Peleador favorito) {
+public class EspectadorRosa extends Espectador implements Observador{
+
+    public EspectadorRosa(Peleador favorito) {
         super(favorito);
-        nombre = "Monse";
-        bitacora = "Bitacora de " +  nombre + " \nPeleador favorito = " + favorito.obtenerNombre()+ "\n";
+        nombre = "Rosa";
+        bitacora = "Bitacora de " +  nombre + " \nPeleador favorito = " + favorito.obtenerNombre() + "\n";
     }
 
     @Override
@@ -28,8 +28,8 @@ public class EspectadorMonse extends Espectador implements Observador {
                 e.printStackTrace();
             }
         }else{
-            bitacora += "## " + Bitacora.obtenerUltimaModificacion() + " ##\n";
+            bitacora += "XX " + Bitacora.obtenerUltimaModificacion() + " XX\n";
         }
     }
-
+    
 }
