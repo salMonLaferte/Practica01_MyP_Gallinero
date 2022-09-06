@@ -1,7 +1,7 @@
 import java.util.Random;
 /**
- * Representa una de las transformaciones de MeganMan con su 
- * forma de pelear personalizada.
+ * Transformacion de Megan Man la cual representa a Megan Man transformado en Zero
+ * con su forma de pelear personalizada.
  */
 public class Zero extends MeganManTransformacion implements FormaDePelear{
 
@@ -9,7 +9,7 @@ public class Zero extends MeganManTransformacion implements FormaDePelear{
         super();
     }
     public void setPeleadorBase(Peleador p) {
-        personajeBase = p;
+        peleadorBase = p;
     }
 
     @Override
@@ -19,36 +19,28 @@ public class Zero extends MeganManTransformacion implements FormaDePelear{
         int fuerza = 1;
 
         if (numeroAleatorio > .3f) {
-            Bitacora.registrarAccionDePelea(personajeBase, "¡¡Mega Man-Zero ataca con la espada Sigma, porque no sabes demostrar!!");
+            Bitacora.registrarAccionDePelea(peleadorBase, "¡¡Mega Man-Zero ataca con la espada Sigma, porque no sabes demostrar!!");
             fuerza = 40;
-            Bitacora.registrarAccionDePelea(personajeBase, "Repercusion de ataque: " + fuerza);
-            
         } else if (numeroAleatorio < .3f && numeroAleatorio > .1f) {
-            Bitacora.registrarAccionDePelea(personajeBase, "¡¡Mega Man-Zero hace el ataque lightning, aventando muchos rayos laser!!");
+            Bitacora.registrarAccionDePelea(peleadorBase, "¡¡Mega Man-Zero hace el ataque lightning, aventando muchos rayos laser!!");
             fuerza = 25;
-            Bitacora.registrarAccionDePelea(personajeBase, "Repercusion de ataque: " + fuerza);
-
         } else {
-            Bitacora.registrarAccionDePelea(personajeBase, "¡¡Mega Man-Zero hace el ataque W-Shredder, creandote la ilusion de estar con ella!!");
+            Bitacora.registrarAccionDePelea(peleadorBase, "¡¡Mega Man-Zero hace el ataque W-Shredder, creandote la ilusion de estar con ella!!");
             fuerza = 30;
-            Bitacora.registrarAccionDePelea(personajeBase, "Repercusion de ataque: " + fuerza);
-
         }
         return fuerza;
     }
 
     @Override
     public void ejecutarDefensa(Peleador atacante, int fuerza) {
-        Bitacora.registrarAccionDePelea(personajeBase, "Zero se defiende con su traje resistente");
+        Bitacora.registrarAccionDePelea(peleadorBase, "Megan Man-Zero se defiende con su traje resistente");
 
         int golpeRecibido = fuerza - 2;
         if(golpeRecibido <= 0){
             golpeRecibido = 1;
         }
-        personajeBase.reducirVida(golpeRecibido);
-        Bitacora.registrarAccionDePelea(personajeBase, "Perdió " + golpeRecibido + " puntos de vida");
-   
-        
+        peleadorBase.reducirVida(golpeRecibido);
+        Bitacora.registrarAccionDePelea(peleadorBase, "Perdió " + golpeRecibido + " puntos de vida");
     }
     
     

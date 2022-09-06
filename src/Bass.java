@@ -14,34 +14,28 @@ public class Bass extends MeganManTransformacion implements FormaDePelear{
         Random rand = new Random();
         float numeroAleatorio = rand.nextFloat();
         int fuerza = 1;
-
         if (numeroAleatorio > .3f) {
-
-            Bitacora.registrarAccionDePelea(personajeBase, "¡¡Mega Man-Bass ataca con su buster repetidamente!!");
+            Bitacora.registrarAccionDePelea(peleadorBase, "¡¡Mega Man-Bass ataca con su buster repetidamente!!");
             fuerza = 45;
-            Bitacora.registrarAccionDePelea(personajeBase, "Repercusion de ataque: " + fuerza);
         } else if (numeroAleatorio < .3f && numeroAleatorio > .1f) {
-            Bitacora.registrarAccionDePelea(personajeBase, "¡¡Mega Man-Bass acaba de saltar doble y dispararte!!");
+            Bitacora.registrarAccionDePelea(peleadorBase, "¡¡Mega Man-Bass acaba de saltar doble y dispararte!!");
             fuerza = 35;
-            Bitacora.registrarAccionDePelea(personajeBase, "Repercusion de ataque: " + fuerza);
         } else {
-            Bitacora.registrarAccionDePelea(personajeBase, "¡¡Mega Man-Bass acaba de copiar el poder de tu maestra, esta rotisimo!!");
+            Bitacora.registrarAccionDePelea(peleadorBase, "¡¡Mega Man-Bass acaba de copiar el poder de tu maestra, esta rotisimo!!");
             fuerza = 15;
-            Bitacora.registrarAccionDePelea(personajeBase, "Repercusion de ataque: " + fuerza);
         }
         return fuerza;
     }
 
     @Override
     public void ejecutarDefensa(Peleador atacante, int fuerza) {
-        Bitacora.registrarAccionDePelea(personajeBase, "Bass se defiende esquivando los ataques en el aire");
-
+        Bitacora.registrarAccionDePelea(peleadorBase, "Megan Man-Bass se defiende esquivando los ataques en el aire");
         int golpeRecibido = fuerza - 2;
         if(golpeRecibido <= 0){
             golpeRecibido = 1;
         }
-        personajeBase.reducirVida(golpeRecibido);
-        Bitacora.registrarAccionDePelea(personajeBase, "Perdió " + golpeRecibido + " puntos de vida");
+        peleadorBase.reducirVida(golpeRecibido);
+        Bitacora.registrarAccionDePelea(peleadorBase, "Megan Man-Bass perdió " + golpeRecibido + " puntos de vida");
     }
  
 }

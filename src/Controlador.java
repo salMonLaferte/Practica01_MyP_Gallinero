@@ -16,15 +16,15 @@ public class Controlador {
         
         KorbyBase korbyBase = new KorbyBase();
         Korby korby = new Korby(100, korbyBase);
-        korbyBase.personajeBase = korby;
+        korbyBase.peleadorBase = korby;
 
         DittuuBase dittuBase = new DittuuBase();
         Dittuu dittuu = new Dittuu(100, dittuBase);
-        dittuBase.personajeBase = dittuu;
+        dittuBase.peleadorBase = dittuu;
 
         MeganManBase meganManBase = new MeganManBase();
         MeganMan meganMan = new MeganMan(100, meganManBase);
-        meganManBase.personajeBase = meganMan;
+        meganManBase.peleadorBase = meganMan;
 
         //Mete a los peleadores en una lista
         peleadoresCombatiendo.add(korby);
@@ -37,8 +37,9 @@ public class Controlador {
         Bitacora.bitacora.registrarObservador(new EspectadorJatziri(dittuu));
         Bitacora.bitacora.registrarObservador(new EspectadorRosa(korby));
 
+        //Cada 4 turnos los peleadores cambian de transformacion
         int turno = 1;
-        int turnosParaCambiarTransformacion = 3;
+        int turnosParaCambiarTransformacion = 4;
 
         //Ejecuta peleas aleatorias hasta que solo uno de los peleadores quede en pie.
         while( peleadoresCombatiendo.size() >= 2){
@@ -53,12 +54,14 @@ public class Controlador {
                 peleadoresCombatiendo.remove(indicesAleatoriosDistintos[1]);
             }
             turno++;
+            //Se verifica si es hora de cambiar las transformaciones
             if(turno % turnosParaCambiarTransformacion == 0 ){
                 for (Peleador p : peleadoresCombatiendo) {
                     p.cambiaTransformacion();
                 }
             }
         }
+        //Se registra el ultimo peleador en pie, es decir el ganador.
         Bitacora.registrarGanador(peleadoresCombatiendo.get(0));
     }
 
