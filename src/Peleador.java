@@ -1,4 +1,4 @@
-import java.lang.invoke.MethodHandle;
+
 import java.util.Random;
 
 public class Peleador {
@@ -44,16 +44,19 @@ public class Peleador {
                 WaddleDee waddleDee = new WaddleDee();
                 formaDePelear = waddleDee;
                 waddleDee.personajeBase = this;
+                Bitacora.registerEvent(this, "Korby se ha comido una WaddleDee-galleta");
             }
             else if(this instanceof MeganMan){
                 Zero zero = new Zero();
                 formaDePelear = zero;
                 zero.personajeBase = this;
+                Bitacora.registerEvent(this, "MegaMan ha bebido una Zero-pocion");
             }
             else if(this instanceof Dittuu){
                 Evee evee = new Evee();
                 formaDePelear = evee;
                 evee.personajeBase = this;
+                Bitacora.registerEvent(this, "Dittuu se ha comido una Evee-sopa");
             }
         }
         else if(numeroAleatorio <.6){
@@ -61,16 +64,19 @@ public class Peleador {
                 ReyDeDeDe reyDeDeDe = new ReyDeDeDe();
                 formaDePelear = reyDeDeDe;
                 reyDeDeDe.personajeBase = this;
+                Bitacora.registerEvent(this, "Korby se ha comido una reyDeDeDe-galleta");
             }
             else if(this instanceof MeganMan){
                 Omega omega = new Omega();
                 formaDePelear = omega;
                 omega.personajeBase = this;
+                Bitacora.registerEvent(this, "MegaMan ha bebido una Omega-pocion");
             }
             else if(this instanceof Dittuu){
                 JigglyPuff jigglyPuff = new JigglyPuff();
                 formaDePelear = jigglyPuff;
                 jigglyPuff.personajeBase = this;
+                Bitacora.registerEvent(this, "Dittuu se ha comido una JigglyPuff-sopa");
             }
         }
         else{
@@ -78,16 +84,19 @@ public class Peleador {
                 MetaKnight metaKnight = new MetaKnight();
                 formaDePelear = metaKnight;
                 metaKnight.personajeBase = this;
+                Bitacora.registerEvent(this, "Korby se ha comido una MetaKnight-galleta");
             }
             else if(this instanceof MeganMan){
                 Bass bass = new Bass();
                 formaDePelear = bass;
                 bass.personajeBase = this;
+                Bitacora.registerEvent(this, "MegaMan ha bebido una Bass-pocion");
             }
             else if(this instanceof Dittuu){
                 Mimikyu mimikyu = new Mimikyu();
                 formaDePelear = mimikyu;
-                mimikyu.personajeBase = this; 
+                mimikyu.personajeBase = this;
+                Bitacora.registerEvent(this, "Dittuu se ha comido una JigglyPuff-sopa");
             }
         }
         return;
