@@ -21,7 +21,8 @@ public class Controlador {
         MeganManBase meganManBase = new MeganManBase();
         MeganMan meganMan = new MeganMan(100, meganManBase);
         meganManBase.personajeBase = meganMan;
-        
+
+        //Mete a los peleadores en una lista
         peleadoresCombatiendo.add(korby);
         peleadoresCombatiendo.add(meganMan);
         peleadoresCombatiendo.add(dittuu);

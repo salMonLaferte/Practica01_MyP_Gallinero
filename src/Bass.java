@@ -1,5 +1,8 @@
 import java.util.Random;
-
+/**
+ * Representa una de las transformaciones de MeganMan con su 
+ * forma de pelear personalizada.
+ */
 public class Bass extends MeganManTransformacion implements FormaDePelear{
 
     public Bass() {

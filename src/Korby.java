@@ -4,4 +4,5 @@ public class Korby extends Peleador{
         super(vida, transformacion);
         nombre = "Korby";
     }
+    
 }

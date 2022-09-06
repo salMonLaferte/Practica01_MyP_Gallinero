@@ -1,3 +1,6 @@
+/**
+ * Transformacion de Dittuu la cual representa a Dittuu sin transformacion.
+ */
 public class DittuuBase extends Transformacion implements FormaDePelear {
 
     public DittuuBase() {
