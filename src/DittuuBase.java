@@ -9,17 +9,18 @@ public class DittuuBase extends Transformacion implements FormaDePelear {
 
     @Override
     public int ejecutarAtaque(Peleador objetivo) {
-        Bitacora.registrarAccionDePelea(personajeBase, "Dittuu atacó en su forma gelatinosa y dió un poco de asco.");
+        Bitacora.registrarAccionDePelea(peleadorBase, "Dittuu atacó en su forma gelatinosa y dió un poco de asco.");
         return 1;
     }
 
     @Override
     public void ejecutarDefensa(Peleador atacante, int fuerza) {
-        Bitacora.registrarAccionDePelea(personajeBase, "Dittuu esta gelatinoso y fue un poco complicado golpearlo.");
+        Bitacora.registrarAccionDePelea(peleadorBase, "Dittuu esta gelatinoso y fue un poco complicado golpearlo.");
         int golpeRecibido = fuerza - 3;
         if(golpeRecibido <= 0)
             golpeRecibido = 1;
-        personajeBase.reducirVida(golpeRecibido);
+        peleadorBase.reducirVida(golpeRecibido);
+        Bitacora.registrarAccionDePelea(peleadorBase, "Dittuu recibio un golpe de  " + golpeRecibido);
     }
     
 }

@@ -1,70 +1,159 @@
 Bitacora de Rosa 
 Peleador favorito = Korby
+XX 
+Dittu atacará a Korby
+ XX
 XX Dittuu atacó en su forma gelatinosa y dió un poco de asco. XX
 XX Korby se hizo todavìa más bolita para defenderse. XX
+XX Korby recibio un golpe de 1 XX
+XX A Korby le quedan 99 puntos de vida. XX
+XX 
+Korby atacará a Dittu
+ XX
 XX Korby dice Poyo y da un golpesito. XX
 XX Dittuu esta gelatinoso y fue un poco complicado golpearlo. XX
-XX Korby se ha comido una MetaKnight-galleta XX
-XX MegaMan ha bebido una Zero-pocion XX
-XX Dittuu se ha comido una Evee-sopa XX
-XX ¡¡Mega Man-Zero ataca con la espada Sigma, porque no sabes demostrar!! XX
-XX Repercusion de ataque: 40 XX
-XX Se prepara para defenderse con cinta de Sol XX
-XX Perdió 37 puntos de vida XX
-XX ¡¡Mega Man-Zero ataca con la espada Sigma, porque no sabes demostrar!! XX
-XX Repercusion de ataque: 40 XX
-XX Se defiende con sus guantes blancos especiales XX
-XX Perdió 35 puntos de vida XX
-XX Korby-Meta Knight ataca con turbo taladro, el mismo que usa tu vecino a las 6 de la mañana XX
-XX Repercusion de ataque: 40 XX
-XX Zero se defiende con su traje resistente XX
-XX Perdió 38 puntos de vida XX
-XX Korby se ha comido una WaddleDee-galleta XX
-XX MegaMan ha bebido una Bass-pocion XX
-XX Dittuu se ha comido una JigglyPuff-sopa XX
-XX WaddleDee se transformo en ninja y se tasajeo al rival XX
-XX Bass se defiende esquivando los ataques en el aire XX
-XX Perdió 6 puntos de vida XX
-XX Al parecer WaddleDee es un personaje pacifico, 
-pero hoy escogio la violencia XX
-XX Bass se defiende esquivando los ataques en el aire XX
-XX Perdió 4 puntos de vida XX
-XX ¡¡Mega Man-Bass acaba de saltar doble y dispararte!! XX
-XX Repercusion de ataque: 35 XX
-XX WaddleDee se defiende bien porque le cae bien al programador XX
-XX Sin embargo aun asi pierde 31 de vida XX
-XX Korby se ha comido una reyDeDeDe-galleta XX
-XX MegaMan ha bebido una Bass-pocion XX
-XX Dittuu se ha comido una JigglyPuff-sopa XX
-XX Rey Dedede hizo un lanzamiento de gordo XX
+XX Dittuu recibio un golpe de  1 XX
+XX A Dittu le quedan 99 puntos de vida. XX
+XX 
+::::Korby se ha comido una reyDeDeDe-galleta::::
+ XX
+XX 
+::::MegaMan ha bebido una Bass-pocion::::
+ XX
+XX 
+::::Dittuu se ha comido una JigglyPuff-sopa::::
+ XX
+XX 
+Korby atacará a Dittu
+ XX
+XX Korby-Dedede se burlo tanto de los otros oponentes que perdieron vida XX
 XX Dittuu-JigglyPuff se prepara para defenderse XX
-XX Perdió 8 puntos de vida XX
-XX ¡¡Mega Man-Bass ataca con su buster repetidamente!! XX
-XX Repercusion de ataque: 45 XX
-XX Rey Dedede nunca tomo clases de defensa personal, pero al menos intento meter las manos. XX
-XX Rey Dedede no está de suerte hoy, perdio: 42 de vida XX
-XX Korby ha quedado fuera de la pelea.  XX
+XX Perdió 10 puntos de vida XX
+XX A Dittu le quedan 89 puntos de vida. XX
+XX 
+Dittu atacará a MeganMan
+ XX
 XX Dittuu-JigglyPuff ataca durmiendote, como tu clase de matematicas XX
-XX  40 XX
-XX Bass se defiende esquivando los ataques en el aire XX
-XX Perdió 38 puntos de vida XX
-XX MegaMan ha bebido una Bass-pocion XX
-XX Dittuu se ha comido una JigglyPuff-sopa XX
-XX Mimikyu ocupa mazazo XX
-XX Bass se defiende esquivando los ataques en el aire XX
-XX Perdió 8 puntos de vida XX
-XX ¡¡Mega Man-Bass ataca con su buster repetidamente!! XX
-XX Repercusion de ataque: 45 XX
-XX Mimikyu es bueno para evitar los golpes XX
-XX Sin emargo aun asi lograron lastimarlo, perdio 42 de vida XX
-XX Mimikyu se cachetea al contrincante XX
-XX Bass se defiende esquivando los ataques en el aire XX
-XX Perdió 5 puntos de vida XX
-XX MegaMan ha bebido una Omega-pocion XX
-XX Dittuu se ha comido una JigglyPuff-sopa XX
+XX Megan Man-Bass se defiende esquivando los ataques en el aire XX
+XX Megan Man-Bass perdió 38 puntos de vida XX
+XX A MeganMan le quedan 62 puntos de vida. XX
+XX 
+Dittu atacará a Korby
+ XX
 XX Dittuu-JigglyPuff empezo cantando bien bonito XX
-XX  20 XX
-XX Omega tiene armadura, el golpe no le afecta (tanto) XX
-XX El complejo de Dios de Omega no lo vuelve inmortal, perdio 18 de vida XX
+XX Korby-Dedede nunca tomo clases de defensa personal, pero al menos intento meter las manos. XX
+XX Korby-Dedede no está de suerte hoy, perdio: 17 de vida XX
+XX A Korby le quedan 82 puntos de vida. XX
+XX 
+::::Korby se ha comido una WaddleDee-galleta::::
+ XX
+XX 
+::::MegaMan ha bebido una Omega-pocion::::
+ XX
+XX 
+::::Dittuu se ha comido una JigglyPuff-sopa::::
+ XX
+XX 
+Korby atacará a MeganMan
+ XX
+XX WaddleDee le lanzo una lanza al enemigo XX
+XX Megan Man-Omega tiene armadura, el golpe no le afecta (tanto) XX
+XX El complejo de Dios de Megan Man-Omega no lo vuelve inmortal, perdio 10 de vida XX
+XX A MeganMan le quedan 52 puntos de vida. XX
+XX 
+Dittu atacará a MeganMan
+ XX
+XX Dittuu-JigglyPuff empezo cantando bien bonito XX
+XX Megan Man-Omega tiene armadura, el golpe no le afecta (tanto) XX
+XX El complejo de Dios de Megan Man-Omega no lo vuelve inmortal, perdio 18 de vida XX
+XX A MeganMan le quedan 34 puntos de vida. XX
+XX 
+MeganMan atacará a Dittu
+ XX
+XX Megan Man-Omega ocupo espada perforadora XX
+XX Dittuu-JigglyPuff se prepara para defenderse XX
+XX Perdió 10 puntos de vida XX
+XX A Dittu le quedan 79 puntos de vida. XX
+XX 
+::::Korby se ha comido una reyDeDeDe-galleta::::
+ XX
+XX 
+::::MegaMan ha bebido una Zero-pocion::::
+ XX
+XX 
+::::Dittuu se ha comido una Evee-sopa::::
+ XX
+XX 
+Korby atacará a Dittu
+ XX
+XX Korby-Dedede se burlo tanto de los otros oponentes que perdieron vida XX
+XX Se prepara para defenderse con cinta de Sol XX
+XX Perdió 9 puntos de vida XX
+XX A Dittu le quedan 70 puntos de vida. XX
+XX 
+Korby atacará a MeganMan
+ XX
+XX Korby-Dedede conto un chiste de Eugenio Derbez, eso no le hizo daño a nadie. Pero fue un chiste tan malo que los demas perdieron vida XX
+XX Megan Man-Zero se defiende con su traje resistente XX
+XX Perdió 13 puntos de vida XX
+XX A MeganMan le quedan 21 puntos de vida. XX
+XX 
+Dittu atacará a MeganMan
+ XX
+XX Dittuu-Evee ataca con su hermosa ternura XX
+XX Megan Man-Zero se defiende con su traje resistente XX
+XX Perdió 13 puntos de vida XX
+XX A MeganMan le quedan 8 puntos de vida. XX
+XX 
+::::Korby se ha comido una MetaKnight-galleta::::
+ XX
+XX 
+::::MegaMan ha bebido una Bass-pocion::::
+ XX
+XX 
+::::Dittuu se ha comido una JigglyPuff-sopa::::
+ XX
+XX 
+Korby atacará a MeganMan
+ XX
+XX Korby-Meta Knight ataca con turbo taladro, el mismo que usa tu vecino a las 6 de la mañana XX
+XX Megan Man-Bass se defiende esquivando los ataques en el aire XX
+XX Megan Man-Bass perdió 38 puntos de vida XX
+XX A MeganMan le quedan 0 puntos de vida. XX
 XX MeganMan ha quedado fuera de la pelea.  XX
-Mala suerte, tu peleador favorito: Korby perdio, el ganador es: Dittu
+XX 
+Korby atacará a Dittu
+ XX
+XX Korby-Meta Knight ataca con turbo taladro, el mismo que usa tu vecino a las 6 de la mañana XX
+XX Dittuu-JigglyPuff se prepara para defenderse XX
+XX Perdió 38 puntos de vida XX
+XX A Dittu le quedan 32 puntos de vida. XX
+XX 
+Korby atacará a Dittu
+ XX
+XX Korby-Meta Knight ataca con un Megaataque XX
+XX Dittuu-JigglyPuff se prepara para defenderse XX
+XX Perdió 23 puntos de vida XX
+XX A Dittu le quedan 9 puntos de vida. XX
+XX 
+::::Korby se ha comido una reyDeDeDe-galleta::::
+ XX
+XX 
+::::Dittuu se ha comido una JigglyPuff-sopa::::
+ XX
+XX 
+Korby atacará a Dittu
+ XX
+XX Korby-Dedede hizo un lanzamiento de gordo XX
+XX Mimikyu es bueno para evitar los golpes XX
+XX Sin emargo aun asi lograron lastimarlo, perdio 7 de vida XX
+XX A Dittu le quedan 2 puntos de vida. XX
+XX 
+Korby atacará a Dittu
+ XX
+XX Korby-Dedede conto un chiste de Eugenio Derbez, eso no le hizo daño a nadie. Pero fue un chiste tan malo que los demas perdieron vida XX
+XX Mimikyu es bueno para evitar los golpes XX
+XX Sin emargo aun asi lograron lastimarlo, perdio 12 de vida XX
+XX A Dittu le quedan 0 puntos de vida. XX
+XX Dittu ha quedado fuera de la pelea.  XX
+Felicidades! ganó tu peleador favorito: Korby

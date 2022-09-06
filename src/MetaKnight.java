@@ -1,5 +1,8 @@
 import java.util.Random;
-
+/**
+ * Transformacion de Korby la cual representa a Korby transformado en Meta Knight
+ * con su forma de pelear personalizada.
+ */
 public class MetaKnight extends KorbyTransformacion implements FormaDePelear{
 
     public MetaKnight() {
@@ -13,34 +16,28 @@ public class MetaKnight extends KorbyTransformacion implements FormaDePelear{
         int fuerza = 1;
 
         if (numeroAleatorio > .3f) {
-            Bitacora.registrarAccionDePelea(personajeBase, "Korby-Meta Knight ataca con turbo taladro, el mismo que usa tu vecino a las 6 de la mañana");
+            Bitacora.registrarAccionDePelea(peleadorBase, "Korby-Meta Knight ataca con turbo taladro, el mismo que usa tu vecino a las 6 de la mañana");
             fuerza = 40;
-            Bitacora.registrarAccionDePelea(personajeBase, "Repercusion de ataque: " + fuerza);
-
         } else if (numeroAleatorio < .3f && numeroAleatorio > .1f) {
-            Bitacora.registrarAccionDePelea(personajeBase, "Korby-Meta Knight ataca con un Megaataque");
+            Bitacora.registrarAccionDePelea(peleadorBase, "Korby-Meta Knight ataca con un Megaataque");
             fuerza = 25;
-            Bitacora.registrarAccionDePelea(personajeBase, "Repercusion de ataque: " + fuerza);
-
         } else {
-            Bitacora.registrarAccionDePelea(personajeBase, "Korby-Meta Knight ataca como un tonado similar a tu crush, porque te manda a volar");
+            Bitacora.registrarAccionDePelea(peleadorBase, "Korby-Meta Knight ataca como un tonado similar a tu crush, porque te manda a volar");
             fuerza = 30;
-            Bitacora.registrarAccionDePelea(personajeBase, "Repercusion de ataque: " + fuerza);
-
         }
         return fuerza;
     }
 
     @Override
     public void ejecutarDefensa(Peleador atacante, int fuerza) {
-        Bitacora.registrarAccionDePelea(personajeBase, "Se defiende con sus guantes blancos especiales");
+        Bitacora.registrarAccionDePelea(peleadorBase, "Korby-Meta Knight se defiende con sus guantes blancos especiales");
 
         int golpeRecibido = fuerza - 5;
         if(golpeRecibido <= 0){
             golpeRecibido = 1;
         }
-        personajeBase.reducirVida(golpeRecibido);
-        Bitacora.registrarAccionDePelea(personajeBase, "Perdió " + golpeRecibido + " puntos de vida");
+        peleadorBase.reducirVida(golpeRecibido);
+        Bitacora.registrarAccionDePelea(peleadorBase, "Perdió " + golpeRecibido + " puntos de vida");
         
     }
 

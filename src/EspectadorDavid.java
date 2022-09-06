@@ -8,7 +8,7 @@ public class EspectadorDavid extends Espectador implements Observador {
     public EspectadorDavid(Peleador favorito) {
         super(favorito);
         nombre = "David";
-        bitacora = "Bitacora de " +  nombre + " \nPeleador favorito = " + favorito.obtenerNombre();
+        bitacora = "Bitacora de " +  nombre + " \nPeleador favorito = " + favorito.obtenerNombre() + "\n";
     }
 
     @Override

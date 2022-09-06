@@ -19,8 +19,10 @@ public class Peleador {
      * @param objetivo Peleador enemigo.
      */
     public void ejecutarAtaque(Peleador objetivo){
+        Bitacora.registrarAtaque(this, objetivo);
         int fuerza = formaDePelear.ejecutarAtaque(objetivo);
         objetivo.ejecutarDefensa(objetivo, fuerza);
+        
     }
 
     /**
@@ -30,6 +32,10 @@ public class Peleador {
      */
     public void ejecutarDefensa(Peleador atacante,int fuerza){
         formaDePelear.ejecutarDefensa(atacante, fuerza);
+        int aux = vida;
+        if(aux < 0)
+            aux = 0;
+        Bitacora.registrarAccionDePelea(this, "A " + obtenerNombre() + " le quedan " + aux + " puntos de vida.");
     }
 
     /**
@@ -59,60 +65,60 @@ public class Peleador {
             if(this instanceof Korby){
                 WaddleDee waddleDee = new WaddleDee();
                 formaDePelear = waddleDee;
-                waddleDee.personajeBase = this;
-                Bitacora.registrarAccionDePelea(this, "Korby se ha comido una WaddleDee-galleta");
+                waddleDee.peleadorBase = this;
+                Bitacora.registrarAccionDePelea(this, "\n::::Korby se ha comido una WaddleDee-galleta::::\n");
             }
             else if(this instanceof MeganMan){
                 Zero zero = new Zero();
                 formaDePelear = zero;
-                zero.personajeBase = this;
-                Bitacora.registrarAccionDePelea(this, "MegaMan ha bebido una Zero-pocion");
+                zero.peleadorBase = this;
+                Bitacora.registrarAccionDePelea(this, "\n::::MegaMan ha bebido una Zero-pocion::::\n");
             }
             else if(this instanceof Dittuu){
                 Evee evee = new Evee();
                 formaDePelear = evee;
-                evee.personajeBase = this;
-                Bitacora.registrarAccionDePelea(this, "Dittuu se ha comido una Evee-sopa");
+                evee.peleadorBase = this;
+                Bitacora.registrarAccionDePelea(this, "\n::::Dittuu se ha comido una Evee-sopa::::\n");
             }
         }
         else if(numeroAleatorio <.66){
             if(this instanceof Korby){
                 ReyDeDeDe reyDeDeDe = new ReyDeDeDe();
                 formaDePelear = reyDeDeDe;
-                reyDeDeDe.personajeBase = this;
-                Bitacora.registrarAccionDePelea(this, "Korby se ha comido una reyDeDeDe-galleta");
+                reyDeDeDe.peleadorBase = this;
+                Bitacora.registrarAccionDePelea(this, "\n::::Korby se ha comido una reyDeDeDe-galleta::::\n");
             }
             else if(this instanceof MeganMan){
                 Omega omega = new Omega();
                 formaDePelear = omega;
-                omega.personajeBase = this;
-                Bitacora.registrarAccionDePelea(this, "MegaMan ha bebido una Omega-pocion");
+                omega.peleadorBase = this;
+                Bitacora.registrarAccionDePelea(this, "\n::::MegaMan ha bebido una Omega-pocion::::\n");
             }
             else if(this instanceof Dittuu){
                 JigglyPuff jigglyPuff = new JigglyPuff();
                 formaDePelear = jigglyPuff;
-                jigglyPuff.personajeBase = this;
-                Bitacora.registrarAccionDePelea(this, "Dittuu se ha comido una JigglyPuff-sopa");
+                jigglyPuff.peleadorBase = this;
+                Bitacora.registrarAccionDePelea(this, "\n::::Dittuu se ha comido una JigglyPuff-sopa::::\n");
             }
         }
         else{
             if(this instanceof Korby){
                 MetaKnight metaKnight = new MetaKnight();
                 formaDePelear = metaKnight;
-                metaKnight.personajeBase = this;
-                Bitacora.registrarAccionDePelea(this, "Korby se ha comido una MetaKnight-galleta");
+                metaKnight.peleadorBase = this;
+                Bitacora.registrarAccionDePelea(this, "\n::::Korby se ha comido una MetaKnight-galleta::::\n");
             }
             else if(this instanceof MeganMan){
                 Bass bass = new Bass();
                 formaDePelear = bass;
-                bass.personajeBase = this;
-                Bitacora.registrarAccionDePelea(this, "MegaMan ha bebido una Bass-pocion");
+                bass.peleadorBase = this;
+                Bitacora.registrarAccionDePelea(this, "\n::::MegaMan ha bebido una Bass-pocion::::\n");
             }
             else if(this instanceof Dittuu){
                 Mimikyu mimikyu = new Mimikyu();
                 formaDePelear = mimikyu;
-                mimikyu.personajeBase = this;
-                Bitacora.registrarAccionDePelea(this, "Dittuu se ha comido una JigglyPuff-sopa");
+                mimikyu.peleadorBase = this;
+                Bitacora.registrarAccionDePelea(this, "\n::::Dittuu se ha comido una JigglyPuff-sopa::::\n");
             }
         }
         return;

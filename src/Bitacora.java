@@ -43,6 +43,11 @@ public class Bitacora implements Sujeto {
         bitacora.notificarObservadores();
     }
 
+    public static void registrarAtaque(Peleador fuente, Peleador objetivo){
+        bitacora.ultimaNotificacion = "\n" + fuente.obtenerNombre() + " atacará a " + objetivo.obtenerNombre() + "\n";
+        bitacora.notificarObservadores();
+    }
+
     /**
      * Regresa una cadena con la ultima accion ocurrida en la pelea.
      * @return
