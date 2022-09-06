@@ -3,12 +3,12 @@ import java.io.FileNotFoundException;
 /**
  * Espectador concreto
  */
-public class EspectadorMonse extends Espectador implements Observador {
-    
-    public EspectadorMonse(Peleador favorito) {
+public class EspectadorJatziri extends Espectador implements Observador{
+
+    public EspectadorJatziri(Peleador favorito) {
         super(favorito);
-        nombre = "Monse";
-        bitacora = "Bitacora de " +  nombre + " \nPeleador favorito = " + favorito.obtenerNombre()+ "\n";
+        nombre = "Jatziri";
+        bitacora = "Bitacora de " +  nombre + " \nPeleador favorito = " + favorito.obtenerNombre();
     }
 
     @Override
@@ -20,7 +20,7 @@ public class EspectadorMonse extends Espectador implements Observador {
             if(ganadorNombre.equals(peleadorFavoritoNombre)){
                 bitacora += "Felicidades! ganó tu peleador favorito: " + peleadorFavoritoNombre;
             }else{
-                bitacora += "Mala suerte, tu peleador favorito: " + peleadorFavoritoNombre + " perdio, el ganador es: " + ganadorNombre;
+                bitacora += "Mala suerte, tu peleador favorito: " + peleadorFavoritoNombre + " perdio, el ganador es: " + ganadorNombre+ "\n";
             }
             try {
                 escribirBitacoraEnArchivo();
@@ -28,8 +28,8 @@ public class EspectadorMonse extends Espectador implements Observador {
                 e.printStackTrace();
             }
         }else{
-            bitacora += "## " + Bitacora.obtenerUltimaModificacion() + " ##\n";
+            bitacora += "++ " + Bitacora.obtenerUltimaModificacion() + " ++\n";
         }
     }
-
+    
 }

@@ -9,13 +9,13 @@ public class KorbyBase extends Transformacion implements FormaDePelear {
 
     @Override
     public int ejecutarAtaque(Peleador objetivo) {
-        Bitacora.registerEvent(personajeBase,"Korby dice Poyo y da un golpesito.");
+        Bitacora.registrarAccionDePelea(personajeBase,"Korby dice Poyo y da un golpesito.");
         return 2;
     }
 
     @Override
     public void ejecutarDefensa(Peleador atacante, int fuerza) {
-        Bitacora.registerEvent(personajeBase, "Korby se hizo todavìa más bolita para defenderse.");
+        Bitacora.registrarAccionDePelea(personajeBase, "Korby se hizo todavìa más bolita para defenderse.");
         int golpeRecibido = fuerza - 2;
         if(golpeRecibido <= 0)
             golpeRecibido = 1;
