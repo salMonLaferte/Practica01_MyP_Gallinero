@@ -11,20 +11,23 @@ public class Espectador {
 
     /**
      * Crea un espectador asignandole un peleador preferido.
-     * @param favorito Peleador preferido del espectador, se le notificara de manera personalizada si gano o perdio.
+     * 
+     * @param favorito Peleador preferido del espectador, se le notificara de manera
+     *                 personalizada si gano o perdio.
      */
-    public Espectador(Peleador favorito){
+    public Espectador(Peleador favorito) {
         peleadorFavorito = favorito;
     }
-    
-    /**Escribe la bitacora a un archivo de texto.
+
+    /**
+     * Escribe la bitacora a un archivo de texto.
      */
-    public  void escribirBitacoraEnArchivo() throws FileNotFoundException {
+    public void escribirBitacoraEnArchivo() throws FileNotFoundException {
         String nombreDelArchivo = "bitacora" + nombre + ".txt";
         try (PrintStream fout = new PrintStream(nombreDelArchivo)) {
             fout.println(bitacora);
         } catch (FileNotFoundException fnfe) {
-            System.err.println("No se encontró el archivo");
+            System.err.println("No se encontro el archivo");
         } catch (SecurityException se) {
             System.err.println("no.");
         }
