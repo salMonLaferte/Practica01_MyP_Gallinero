@@ -14,6 +14,7 @@ public class EspectadorRosa extends Espectador implements Observador{
     @Override
     public void actualizar() {
         Peleador ganador = Bitacora.obtenerGanador();
+        //Si ya hay un ganador en la pelea genera un archivo de texto con la bitacora completa.
         if(ganador != null){
             String ganadorNombre = ganador.obtenerNombre();
             String peleadorFavoritoNombre = peleadorFavorito.obtenerNombre();
@@ -28,6 +29,7 @@ public class EspectadorRosa extends Espectador implements Observador{
                 e.printStackTrace();
             }
         }else{
+            //Si aun no hay ganador agrega la ultima notificacion de combate a la bitacora
             bitacora += "XX " + Bitacora.obtenerUltimaModificacion() + " XX\n";
         }
     }

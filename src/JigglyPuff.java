@@ -1,45 +1,39 @@
 import java.util.Random;
 /**
- * Transformacion de Dittuu la cual representa a Dittuu transformado en Jiggly Puff
+ * Poder especial de Dittuu la cual representa a Dittuu transformado en Jiggly Puff
  * con su forma de pelear personalizada.
  */
-public class JigglyPuff extends DittuuTransformacion implements FormaDePelear  {
+public class JigglyPuff implements DittuuPoder{
     
     public JigglyPuff() {
         super();
     }
 
-    public void setPeleadorBase( Peleador p){
-        peleadorBase = p;
-    }
-
     @Override
-    public int ejecutarAtaque(Peleador objetivo) {
+    public int ejecutarAtaque() {
         Random rand = new Random();
         float numeroAleatorio = rand.nextFloat();
         int fuerza = 1;
         
         if( numeroAleatorio >.3f ){
-            Bitacora.registrarAccionDePelea(peleadorBase, "Dittuu-JigglyPuff empezo cantando bien bonito");
+            Bitacora.registrarAccionDePelea("Dittuu-JigglyPuff ataco cantando bien bonito");
             fuerza = 20;
         }else{
-            Bitacora.registrarAccionDePelea(peleadorBase, "Dittuu-JigglyPuff ataca durmiendote, como tu clase de matematicas");
+            Bitacora.registrarAccionDePelea( "Dittuu-JigglyPuff ataca durmiendote, como tu clase de matematicas");
             fuerza = 40;
         }
         return fuerza;
     }
 
     @Override
-    public void ejecutarDefensa(Peleador atacante, int fuerza) {
-        Bitacora.registrarAccionDePelea(peleadorBase, "Dittuu-JigglyPuff se prepara para defenderse"); 
-
+    public int ejecutarDefensa( int fuerza) {
+        Bitacora.registrarAccionDePelea( "Dittuu-JigglyPuff se prepara para defenderse"); 
         int golpeRecibido =  fuerza - 2;
         if(golpeRecibido <= 0){
             golpeRecibido = 1;
         }
-
-        peleadorBase.reducirVida(golpeRecibido);
-        Bitacora.registrarAccionDePelea(peleadorBase, "Perdió " + golpeRecibido + " puntos de vida");
+        Bitacora.registrarAccionDePelea( "Dittuu-JigglyPuff es algo fragil, su defensa no fue la mejor."); 
+        return golpeRecibido;
     }
 
 }

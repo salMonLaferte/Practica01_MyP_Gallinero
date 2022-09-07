@@ -12,30 +12,22 @@ public class Controlador {
      */
     public static void reproducirCombateAleatorio(){
         //Crea a los peleadores.
-        ArrayList<Peleador> peleadoresCombatiendo = new ArrayList<>();
-        
-        KorbyBase korbyBase = new KorbyBase();
-        Korby korby = new Korby(100, korbyBase);
-        korbyBase.peleadorBase = korby;
-
-        DittuuBase dittuBase = new DittuuBase();
-        Dittuu dittuu = new Dittuu(100, dittuBase);
-        dittuBase.peleadorBase = dittuu;
-
-        MeganManBase meganManBase = new MeganManBase();
-        MeganMan meganMan = new MeganMan(100, meganManBase);
-        meganManBase.peleadorBase = meganMan;
+        Korby korby = new Korby();
+        Dittuu dittuu = new Dittuu();
+        MeganMan meganMan = new MeganMan();
 
         //Mete a los peleadores en una lista
+        ArrayList<Peleador> peleadoresCombatiendo = new ArrayList<>();
         peleadoresCombatiendo.add(korby);
         peleadoresCombatiendo.add(meganMan);
         peleadoresCombatiendo.add(dittuu);
 
-        //Registra a los espectadores
-        Bitacora.bitacora.registrarObservador(new EspectadorDavid(korby));
-        Bitacora.bitacora.registrarObservador(new EspectadorMonse(meganMan));
-        Bitacora.bitacora.registrarObservador(new EspectadorJatziri(dittuu));
-        Bitacora.bitacora.registrarObservador(new EspectadorRosa(korby));
+        //Registra a los espectadores y asigna aleatoriamente un peleador favorito
+        Random rand = new Random();
+        Bitacora.bitacora.registrarObservador(new EspectadorDavid(peleadoresCombatiendo.get(rand.nextInt(3))));
+        Bitacora.bitacora.registrarObservador(new EspectadorMonse(peleadoresCombatiendo.get(rand.nextInt(3))));
+        Bitacora.bitacora.registrarObservador(new EspectadorJatziri(peleadoresCombatiendo.get(rand.nextInt(3))));
+        Bitacora.bitacora.registrarObservador(new EspectadorRosa(peleadoresCombatiendo.get(rand.nextInt(3))));
 
         //Cada 4 turnos los peleadores cambian de transformacion
         int turno = 1;
@@ -49,8 +41,8 @@ public class Controlador {
             Peleador objetivo = peleadoresCombatiendo.get(indicesAleatoriosDistintos[1]);
             //Uno de los peleadores seleccionados ataca al otro y si este se quedo sin vida lo sacos de la pelea
             atacante.ejecutarAtaque(objetivo);
-            if(objetivo.vida <= 0){
-                Bitacora.registrarAccionDePelea( peleadoresCombatiendo.get(indicesAleatoriosDistintos[0]) , peleadoresCombatiendo.get(indicesAleatoriosDistintos[1]).obtenerNombre() + " ha quedado fuera de la pelea. " );
+            if(objetivo.haSidoDerrotado()){
+                Bitacora.registrarAccionDePelea( "¡¡¡¡¡¡" + peleadoresCombatiendo.get(indicesAleatoriosDistintos[1]).obtenerNombre() + " ha quedado fuera de la pelea. " + "!!!!!!" );
                 peleadoresCombatiendo.remove(indicesAleatoriosDistintos[1]);
             }
             turno++;

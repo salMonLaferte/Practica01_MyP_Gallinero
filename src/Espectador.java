@@ -2,13 +2,17 @@ import java.io.FileNotFoundException;
 import java.io.PrintStream;
 
 /**
- * Clase para que cada entidad de espectador tenga ciertos atributos comunes.
+ * Clase que representa un espectador de la pelea
  */
 public class Espectador {
     protected String nombre;
     protected Peleador peleadorFavorito;
     protected String bitacora = "";
 
+    /**
+     * Crea un espectador asignandole un peleador preferido.
+     * @param favorito Peleador preferido del espectador, se le notificara de manera personalizada si gano o perdio.
+     */
     public Espectador(Peleador favorito){
         peleadorFavorito = favorito;
     }
