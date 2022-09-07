@@ -4,11 +4,16 @@ import java.util.Random;
  * con su forma de pelear personalizada.
  */
 public class JigglyPuff implements DittuuPoder{
-    
+    /**
+     * Constructor de la clase JigglyPuff
+     */
     public JigglyPuff() {
         super();
     }
-
+    /**
+     * Este metodo ejecuta ataques personalizados de JigglyPuff
+     * @return regresa un int con el danio causado al rival
+     */
     @Override
     public int ejecutarAtaque() {
         Random rand = new Random();
@@ -17,14 +22,18 @@ public class JigglyPuff implements DittuuPoder{
         
         if( numeroAleatorio >.3f ){
             Bitacora.registrarAccionDePelea("Dittuu-JigglyPuff ataco cantando bien bonito");
-            fuerza = 20;
+            fuerza = 15;
         }else{
             Bitacora.registrarAccionDePelea( "Dittuu-JigglyPuff ataca durmiendote, como tu clase de matematicas");
-            fuerza = 40;
+            fuerza = 19;
         }
         return fuerza;
     }
-
+    /**
+     * Este metodo ejecuta la defensa personalizada de JigglyPuff
+     * @param fuerza la fuerza recibida del golpe dado por el rival
+     * @return el danio total recibido(danio enemigo - fuerza de defenza)
+     */
     @Override
     public int ejecutarDefensa( int fuerza) {
         Bitacora.registrarAccionDePelea( "Dittuu-JigglyPuff se prepara para defenderse"); 

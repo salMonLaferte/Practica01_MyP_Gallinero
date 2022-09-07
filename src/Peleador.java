@@ -17,19 +17,20 @@ public interface Peleador {
      */
     public void ejecutarDefensa(Peleador atacante,int fuerza);
     
-    /*
-     *Regresa el nombre del peleador.
+    /**
+     * Regresa el nombre del peleador.
+     * @return Nombre del peleador.
      */
     public String obtenerNombre();
 
     /**
-     * Asigna una transformacion aleatoria al peleador
+     * Asigna una transformacion aleatoria al peleador.
      */
     public void cambiaTransformacion();
 
     /**
-     * Nos dice si el peleador ya no puede combatir
-     * @return true si el peleador se considera derroto, falso en caso contrarop
+     * Nos dice si el peleador ya no puede combatir.
+     * @return true si el peleador se considera derroto, falso en caso contrario.
      */
     public boolean haSidoDerrotado();
 }

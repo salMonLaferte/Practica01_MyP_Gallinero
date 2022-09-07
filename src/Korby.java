@@ -9,11 +9,19 @@ public class Korby implements Peleador{
     /**Vida de Korby */
     int vida;
 
+    /**
+     * Constructor de la clase Korby
+     */
     public Korby(){
         poder = new KorbyBase();
         vida = 100;
     }
 
+    /**
+     * Metodo que registra el ataque de Korby, sobre quien lo efectua,
+     * con cuanta fuerza y la defensa del objetivo.
+     * @param objetivo El objetivo sobre el cual se ejecutará el ataque.
+     */
     @Override
     public void ejecutarAtaque(Peleador objetivo) {
         Bitacora.registrarAtaque(this, objetivo);
@@ -21,6 +29,11 @@ public class Korby implements Peleador{
         objetivo.ejecutarDefensa(this, fuerza);
     }
 
+    /**
+     * Metodo que ejecuta y regista en la bitacora la defensa de Korby
+     * @param atacante Quien golpeo a Korby
+     * @param fuerza  Que recibe, dice con cuanta fuerza lo golpeo
+     */
     @Override
     public void ejecutarDefensa(Peleador atacante, int fuerza) {
         int golpeRecibido = poder.ejecutarDefensa( fuerza);
@@ -30,11 +43,18 @@ public class Korby implements Peleador{
         Bitacora.registrarAccionDePelea(obtenerNombre() + " recibio un golpe por : " + golpeRecibido + ". Su vida restante es " + vida + "\n");
     }
 
+    /**
+     * Metodo que obtiene el nombre de Korby
+     * @return El nombre de Korby
+     */
     @Override
     public String obtenerNombre() {
         return "Korby";
     }
-
+    
+    /**
+     * Metodo que escoje que transformacion tomara Korby, ocupa el azar.
+     */
     @Override
     public void cambiaTransformacion() {
         Random rand = new Random();
@@ -52,7 +72,10 @@ public class Korby implements Peleador{
             Bitacora.registrarAccionDePelea("::: Korby se transformo un Waddle Dee :::\n");
         }
     }
-
+    /**
+     * Metodo que indica si Korby ha sido derrotado.
+     * @return verdadero si su vida es <= 0, falso en el caso contrario.
+     */
     @Override
     public boolean haSidoDerrotado() {
         return vida <= 0;

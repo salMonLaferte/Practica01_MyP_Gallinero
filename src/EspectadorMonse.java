@@ -1,14 +1,13 @@
 import java.io.FileNotFoundException;
 
 /**
- * Espectador concreto
+ * Espectador concreto.
  */
 public class EspectadorMonse extends Espectador implements Observador {
 
     /**
-     * Constructor
-     * 
-     * @param peleador favorito
+     * Constructor de la clase EspectadorMonse.
+     * @param peleador favorito.
      */
     public EspectadorMonse(Peleador favorito) {
         super(favorito);
@@ -19,7 +18,7 @@ public class EspectadorMonse extends Espectador implements Observador {
     /**
      * Metodo en el que si ya hay un ganador en la pelea genera un archivo de texto
      * con la bitacora completa.
-     * Si aun no hay ganador agrega la ultima notificacion de combate a la bitacora
+     * Si aun no hay ganador agrega la ultima notificacion de combate a la bitacora.
      */
     @Override
     public void actualizar() {

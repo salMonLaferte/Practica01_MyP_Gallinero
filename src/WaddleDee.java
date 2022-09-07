@@ -5,10 +5,17 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class WaddleDee implements KorbyPoder {
 
+    /**
+     * Constructor de la clase de WaddleDee
+     */
     public WaddleDee() {
         super();
     }
 
+    /**
+     * Este metodo ejecuta ataques personalizados de WaddleDee
+     * @return regresa un int con el danio causado al rival
+     */
     @Override
     public int ejecutarAtaque() {
         int randomNum = ThreadLocalRandom.current().nextInt(1, 3 + 1);
@@ -24,6 +31,11 @@ public class WaddleDee implements KorbyPoder {
         }
     }
 
+    /**
+     * Este metodo ejecuta la defensa personalizada de WaddleDee
+     * @param fuerza la fuerza recibida del golpe dado por el rival
+     * @return el danio total recibido(danio enemigo - fuerza de defenza)
+     */
     @Override
     public int ejecutarDefensa( int fuerza) {
         Bitacora.registrarAccionDePelea("Korby-WaddleDee se defiende bien porque le cae bien al programador");

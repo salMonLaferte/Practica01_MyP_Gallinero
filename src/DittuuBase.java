@@ -4,16 +4,15 @@
 public class DittuuBase implements DittuuPoder {
 
     /**
-     * Constructor
+     * Constructor de la clase de Dittuu Base
      */
     public DittuuBase() {
         super();
     }
 
-    /**
-     * Ejecuta el ataque base de Dittu
-     * 
-     * @return regresa el danio
+   /**
+     * Este metodo ejecuta ataques personalizados de base de Dittuu
+     * @return regresa un int con el danio causado al rival
      */
     @Override
     public int ejecutarAtaque() {
@@ -22,10 +21,9 @@ public class DittuuBase implements DittuuPoder {
     }
 
     /**
-     * Ejecuta la defensa base de Dittu
-     * 
-     * @param con cuanta fuerza fue golpeado
-     * @return el danio total que recibio
+     * Este metodo ejecuta la defensa personalizada de base de Dittuu
+     * @param fuerza la fuerza recibida del golpe dado por el rival
+     * @return el danio total recibido(danio enemigo - fuerza de defenza)
      */
     @Override
     public int ejecutarDefensa(int fuerza) {

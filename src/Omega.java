@@ -5,11 +5,17 @@ import java.util.concurrent.ThreadLocalRandom;
  * con su forma de pelear personalizada.
  */
 public class Omega implements MeganManPoder {
-
+    /**
+     * Constructor de la clase de Omega
+     */
     public Omega() {
         super();
     }
 
+    /**
+     * Este metodo ejecuta ataques personalizados de Omega
+     * @return regresa un int con el danio causado al rival
+     */
     @Override
     public int ejecutarAtaque() {
         int randomNum = ThreadLocalRandom.current().nextInt(1, 3 + 1);
@@ -26,7 +32,11 @@ public class Omega implements MeganManPoder {
             return 16;
         }
     }
-
+    /**
+     * Este metodo ejecuta la defensa personalizada de Omega
+     * @param fuerza la fuerza recibida del golpe dado por el rival
+     * @return el danio total recibido(danio enemigo - fuerza de defenza)
+     */
     @Override
     public int ejecutarDefensa( int fuerza) {
         Bitacora.registrarAccionDePelea( "Megan Man-Omega tiene armadura, el golpe no le afecta (tanto)");

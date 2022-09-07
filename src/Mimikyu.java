@@ -5,10 +5,17 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class Mimikyu implements DittuuPoder {
 
+    /**
+     * Constructor de la clase de Mimikyu
+     */
     public Mimikyu() {
         super();
     }
 
+    /**
+     * Este metodo ejecuta ataques personalizados de Mimikyu
+     * @return regresa un int con el danio causado al rival
+     */
     @Override
     public int ejecutarAtaque() {
         int randomNum = ThreadLocalRandom.current().nextInt(1, 3 + 1);
@@ -24,7 +31,11 @@ public class Mimikyu implements DittuuPoder {
             return 17;
         }
     }
-
+    /**
+     * Este metodo ejecuta la defensa personalizada de Mimikyu
+     * @param fuerza la fuerza recibida del golpe dado por el rival
+     * @return el danio total recibido(danio enemigo - fuerza de defenza)
+     */
     @Override
     public int ejecutarDefensa( int fuerza) {
         Bitacora.registrarAccionDePelea( "Dittu-Mimikyu se defiende, es bueno para evitar los golpes.");

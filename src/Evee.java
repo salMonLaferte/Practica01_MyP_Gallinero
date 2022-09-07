@@ -7,16 +7,15 @@ import java.util.Random;
 public class Evee implements DittuuPoder {
 
     /**
-     * Constructor
+     * Constructor de la clase Evee
      */
     public Evee() {
         super();
     }
 
     /**
-     * Ejecuta los 3 posibles ataques de Evee
-     * 
-     * @return con cuanta fuerza ejecuto el golpe
+     * Este metodo ejecuta ataques personalizados de Evee
+     * @return regresa un int con el danio causado al rival
      */
     @Override
     public int ejecutarAtaque() {
@@ -26,22 +25,21 @@ public class Evee implements DittuuPoder {
 
         if (numeroAleatorio > .3f) {
             Bitacora.registrarAccionDePelea("Dittuu-Evee ataca con su hermosa ternura");
-            fuerza = 15;
+            fuerza = 14;
         } else if (numeroAleatorio < .3f && numeroAleatorio > .1f) {
             Bitacora.registrarAccionDePelea("Dittuu-Evee ataca excavando su corazón y no te encontro");
-            fuerza = 50;
+            fuerza = 6;
         } else {
             Bitacora.registrarAccionDePelea("Dittuu-Evee ataca con un golpe elite");
-            fuerza = 35;
+            fuerza = 11;
         }
         return fuerza;
     }
 
     /**
-     * Ejecuta la defensa de Evee
-     * 
-     * @param recibe la fuerza con la que fue golpeada
-     * @return cuanta vida perdio despues de ejecutar su defensa
+     * Este metodo ejecuta la defensa personalizada de Evee
+     * @param fuerza la fuerza recibida del golpe dado por el rival
+     * @return el danio total recibido(danio enemigo - fuerza de defenza)
      */
     @Override
     public int ejecutarDefensa(int fuerza) {

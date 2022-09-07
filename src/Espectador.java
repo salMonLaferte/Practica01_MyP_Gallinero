@@ -11,7 +11,6 @@ public class Espectador {
 
     /**
      * Crea un espectador asignandole un peleador preferido.
-     * 
      * @param favorito Peleador preferido del espectador, se le notificara de manera
      *                 personalizada si gano o perdio.
      */
@@ -20,7 +19,8 @@ public class Espectador {
     }
 
     /**
-     * Escribe la bitacora a un archivo de texto.
+     * Escribe la bitacora en un archivo de texto.
+     * @throws FileNotFoundException En caso de no encontrarse el archivo.
      */
     public void escribirBitacoraEnArchivo() throws FileNotFoundException {
         String nombreDelArchivo = "bitacora" + nombre + ".txt";

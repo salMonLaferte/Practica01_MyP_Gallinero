@@ -9,11 +9,19 @@ public class MeganMan implements Peleador{
     /**Vida de MeganMan */
     int vida;
 
+    /**
+     * Constructor de la clase MeganMan
+     */
     public MeganMan(){
         poder = new MeganManBase();
         vida = 100;
     }
 
+    /**
+     * Metodo que registra el ataque de MeganMan, sobre quien lo efectua,
+     * con cuanta fuerza y la defensa del objetivo.
+     * @param objetivo El objetivo sobre el cual se ejecutará el ataque.
+     */
     @Override
     public void ejecutarAtaque(Peleador objetivo) {
         Bitacora.registrarAtaque(this, objetivo);
@@ -21,6 +29,11 @@ public class MeganMan implements Peleador{
         objetivo.ejecutarDefensa(this, fuerza);
     }
 
+    /**
+     * Metodo que ejecuta y regista en la bitacora la defensa de MeganMan
+     * @param atacante Quien golpeo a MeganMan
+     * @param fuerza  Que recibe, dice con cuanta fuerza lo golpeo
+     */
     @Override
     public void ejecutarDefensa(Peleador atacante, int fuerza) {
         int golpeRecibido = poder.ejecutarDefensa( fuerza);
@@ -30,11 +43,18 @@ public class MeganMan implements Peleador{
         Bitacora.registrarAccionDePelea(obtenerNombre() + " recibio un golpe por : " + golpeRecibido + ". Su vida restante es " + vida + "\n");
     }
 
+    /**
+     * Metodo que obtiene el nombre de MeganMan
+     * @return El nombre de MeganMan
+     */
     @Override
     public String obtenerNombre() {
         return "MeganMan";
     }
 
+    /**
+     * Metodo que escoje que transformacion tomara MeganMan, ocupa el azar.
+     */
     @Override
     public void cambiaTransformacion() {
         Random rand = new Random();
@@ -53,6 +73,10 @@ public class MeganMan implements Peleador{
         }
     }
 
+    /**
+     * Metodo que indica si MeganMan ha sido derrotado.
+     * @return verdadero si su vida es <= 0, falso en el caso contrario.
+     */
     @Override
     public boolean haSidoDerrotado() {
         return vida <=0;

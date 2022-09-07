@@ -8,14 +8,15 @@ import java.util.Random;
 public class Bass implements MeganManPoder {
 
     /**
-     * Constructor
+     * Constructor de la clase de Bass
      */
     public Bass() {
         super();
     }
 
     /**
-     * Ejecuta los 3 posibles ataques de Bass
+     * Este metodo ejecuta ataques personalizados de Bass
+     * @return regresa un int con el danio causado al rival
      */
     @Override
     public int ejecutarAtaque() {
@@ -24,21 +25,21 @@ public class Bass implements MeganManPoder {
         int fuerza = 1;
         if (numeroAleatorio > .3f) {
             Bitacora.registrarAccionDePelea("Mega Man-Bass ataca con su buster repetidamente");
-            fuerza = 45;
+            fuerza = 15;
         } else if (numeroAleatorio < .3f && numeroAleatorio > .1f) {
             Bitacora.registrarAccionDePelea("Mega Man-Bass acaba de saltar doble y dispararte");
-            fuerza = 35;
+            fuerza = 8;
         } else {
             Bitacora.registrarAccionDePelea("Mega Man-Bass acaba de copiar el poder de tu maestra, esta rotisimo");
-            fuerza = 15;
+            fuerza = 12;
         }
         return fuerza;
     }
 
     /**
-     * Ejecuta la defensa de Bass
-     * 
-     * @return cuanto daño recibio despues de la defensa
+     * Este metodo ejecuta la defensa personalizada de Bass
+     * @param fuerza la fuerza recibida del golpe dado por el rival
+     * @return el danio total recibido(danio enemigo - fuerza de defenza)
      */
     @Override
     public int ejecutarDefensa(int fuerza) {

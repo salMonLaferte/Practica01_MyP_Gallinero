@@ -10,7 +10,7 @@ public class Dittuu implements Peleador {
     int vida;
 
     /**
-     * Constructor
+     * Constructor de la clase Dittuu
      */
     public Dittuu() {
         poder = new DittuuBase();
@@ -20,8 +20,7 @@ public class Dittuu implements Peleador {
     /**
      * Metodo que registra el ataque de Dittu, sobre quien lo efectua,
      * con cuanta fuerza y la defensa del objetivo
-     * 
-     * @param el objetivo sobre el cual se ejecutará el ataque
+     * @param objetivo El objetivo sobre el cual se ejecutará el ataque
      */
     @Override
     public void ejecutarAtaque(Peleador objetivo) {
@@ -31,10 +30,9 @@ public class Dittuu implements Peleador {
     }
 
     /**
-     * Metodo que ejecuta y regista en la bitacora la defena de Dittu
-     * 
-     * @param recibe quien golpeo a Dittu
-     * @param int    que recibe, dice con cuanta fuerza lo golpeo
+     * Metodo que ejecuta y regista en la bitacora la defensa de Dittu
+     * @param atacante Quien golpeo a Dittu
+     * @param fuerza Que recibe, dice con cuanta fuerza lo golpeo
      */
     @Override
     public void ejecutarDefensa(Peleador atacante, int fuerza) {
@@ -48,8 +46,7 @@ public class Dittuu implements Peleador {
 
     /**
      * Metodo que obtiene el nombre de Dittu
-     * 
-     * @return el nombre de Dittu
+     * @return El nombre de Dittu
      */
     @Override
     public String obtenerNombre() {
@@ -57,7 +54,7 @@ public class Dittuu implements Peleador {
     }
 
     /**
-     * Metodo que escoje que transformacion tomara Dittu, ocupa el azar
+     * Metodo que escoje que transformacion tomara Dittu, ocupa el azar.
      */
     @Override
     public void cambiaTransformacion() {
@@ -77,9 +74,8 @@ public class Dittuu implements Peleador {
     }
 
     /**
-     * Metodo que dice si Dittu ha sido derrotado
-     * 
-     * @return verdadero si vida es <= 0, falso en caso contrario
+     * Metodo que indica si Dittu ha sido derrotado
+     * @return verdadero si su vida es <= 0, falso en el caso contrario.
      */
     @Override
     public boolean haSidoDerrotado() {
