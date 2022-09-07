@@ -1,26 +1,25 @@
 /**
- * Transformacion de MeganMan la cual representa a MeganMan sin transformacion.
+ * Poder de MeganMan la cual representa a MeganMan sin transformacion.
  */
-public class MeganManBase extends Transformacion implements FormaDePelear {
+public class MeganManBase implements MeganManPoder {
 
     public MeganManBase() {
         super();
     }
 
     @Override
-    public int ejecutarAtaque(Peleador objetivo) {
-        Bitacora.registrarAccionDePelea(peleadorBase, "MeganMan disparó sin mucha potencia.");
+    public int ejecutarAtaque() {
+        Bitacora.registrarAccionDePelea( "MeganMan disparó sin mucha potencia.");
         return 3;
     }
 
     @Override
-    public void ejecutarDefensa(Peleador atacante, int fuerza) {
-        Bitacora.registrarAccionDePelea(peleadorBase, "El traje MeganMan le proporcionó una defensa aceptable.");
+    public int ejecutarDefensa( int fuerza) {
+        Bitacora.registrarAccionDePelea( "El traje MeganMan le proporcionó una defensa aceptable.");
         int golpeRecibido = fuerza - 2;
         if(golpeRecibido <= 0)
             golpeRecibido = 1;
-        peleadorBase.reducirVida(golpeRecibido);
-        Bitacora.registrarAccionDePelea(peleadorBase, "MeganMan recibió un golpe de: " +  golpeRecibido );
+        return golpeRecibido;
     }
     
 }

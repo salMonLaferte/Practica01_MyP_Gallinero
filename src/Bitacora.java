@@ -33,18 +33,22 @@ public class Bitacora implements Sujeto {
     }
 
     /**
-     * Metodo que registra una accion ocurrida en la pelea y lo guarda
-     * como la ultima notificacion
+     * Metodo que registra una accion ocurrida en la pelea, lo guarda como la ultima notificacion y notifica a los espectadores.
      * @param fuente Peleador que realizo la accion
      * @param s Accion de pelea a registrar
      */
-    public static void registrarAccionDePelea(Peleador fuente, String s){
+    public static void registrarAccionDePelea( String s){
         bitacora.ultimaNotificacion = s;
         bitacora.notificarObservadores();
     }
 
+    /**
+     * Registra cuando un peleador atacara a otro y notifica a los observadores
+     * @param fuente
+     * @param objetivo
+     */
     public static void registrarAtaque(Peleador fuente, Peleador objetivo){
-        bitacora.ultimaNotificacion = "\n" + fuente.obtenerNombre() + " atacará a " + objetivo.obtenerNombre() + "\n";
+        bitacora.ultimaNotificacion =  fuente.obtenerNombre() + " atacará a " + objetivo.obtenerNombre() + "\n";
         bitacora.notificarObservadores();
     }
 

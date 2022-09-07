@@ -1,159 +1,162 @@
 Bitacora de David 
-Peleador favorito = Korby
-** 
-Dittu atacará a Korby
+Peleador favorito = MeganMan
+** MeganMan atacará a Korby
  **
-** Dittuu atacó en su forma gelatinosa y dió un poco de asco. **
+** MeganMan disparó sin mucha potencia. **
 ** Korby se hizo todavìa más bolita para defenderse. **
-** Korby recibio un golpe de 1 **
-** A Korby le quedan 99 puntos de vida. **
-** 
-Korby atacará a Dittu
+** Korby recibio un golpe por : 1. Su vida restante es 99
  **
-** Korby dice Poyo y da un golpesito. **
+** MeganMan atacará a Dittuu
+ **
+** MeganMan disparó sin mucha potencia. **
 ** Dittuu esta gelatinoso y fue un poco complicado golpearlo. **
-** Dittuu recibio un golpe de  1 **
-** A Dittu le quedan 99 puntos de vida. **
-** 
-::::Korby se ha comido una reyDeDeDe-galleta::::
+** Dittuu recibio un golpe por : 1. Su vida restante es 99 
  **
-** 
-::::MegaMan ha bebido una Bass-pocion::::
+** MeganMan atacará a Dittuu
  **
-** 
-::::Dittuu se ha comido una JigglyPuff-sopa::::
+** MeganMan disparó sin mucha potencia. **
+** Dittuu esta gelatinoso y fue un poco complicado golpearlo. **
+** Dittuu recibio un golpe por : 1. Su vida restante es 98 
  **
-** 
-Korby atacará a Dittu
+** :::  Korby se comio una Korby-galleta   ::: **
+** ::: Korby se transformo un Waddle Dee :::
  **
-** Korby-Dedede se burlo tanto de los otros oponentes que perdieron vida **
+** :::  MeganMan se comio una MeganMan-bebida   ::: **
+** ::: MeganMan se transformo un Zero :::
+ **
+** :::  Dittuu se comio una Dittuu-gelatina   ::: **
+** ::: Dituu se transformo un JigglyPuff :::
+ **
+** Korby atacará a Dittuu
+ **
+** Al parecer Korby-WaddleDee es un personaje pacifico, pero hoy escogio la violencia **
 ** Dittuu-JigglyPuff se prepara para defenderse **
-** Perdió 10 puntos de vida **
-** A Dittu le quedan 89 puntos de vida. **
-** 
-Dittu atacará a MeganMan
+** Dittuu-JigglyPuff es algo fragil, su defensa no fue la mejor. **
+** Dittuu recibio un golpe por : 4. Su vida restante es 94 
+ **
+** Korby atacará a Dittuu
+ **
+** Korby-WaddleDee le lanzo una lanza al enemigo **
+** Dittuu-JigglyPuff se prepara para defenderse **
+** Dittuu-JigglyPuff es algo fragil, su defensa no fue la mejor. **
+** Dittuu recibio un golpe por : 10. Su vida restante es 84 
+ **
+** Korby atacará a MeganMan
+ **
+** Korby-WaddleDee se transformo en ninja y se tasajeo al rival **
+** Megan Man-Zero se defiende con su traje resistente **
+** MeganMan recibio un golpe por : 6. Su vida restante es 94
+ **
+** Dittuu atacará a MeganMan
  **
 ** Dittuu-JigglyPuff ataca durmiendote, como tu clase de matematicas **
-** Megan Man-Bass se defiende esquivando los ataques en el aire **
-** Megan Man-Bass perdió 38 puntos de vida **
-** A MeganMan le quedan 62 puntos de vida. **
-** 
-Dittu atacará a Korby
+** Megan Man-Zero se defiende con su traje resistente **
+** MeganMan recibio un golpe por : 38. Su vida restante es 56
  **
-** Dittuu-JigglyPuff empezo cantando bien bonito **
-** Korby-Dedede nunca tomo clases de defensa personal, pero al menos intento meter las manos. **
-** Korby-Dedede no está de suerte hoy, perdio: 17 de vida **
-** A Korby le quedan 82 puntos de vida. **
-** 
-::::Korby se ha comido una WaddleDee-galleta::::
+** :::  Korby se comio una Korby-galleta   ::: **
+** ::: Korby se transformo un Waddle Dee :::
  **
-** 
-::::MegaMan ha bebido una Omega-pocion::::
+** :::  MeganMan se comio una MeganMan-bebida   ::: **
+** ::: MeganMan se transformo un Zero :::
  **
-** 
-::::Dittuu se ha comido una JigglyPuff-sopa::::
+** :::  Dittuu se comio una Dittuu-gelatina   ::: **
+** ::: Dittuu se transformo en Mimikyu :::
  **
-** 
-Korby atacará a MeganMan
+** Korby atacará a MeganMan
  **
-** WaddleDee le lanzo una lanza al enemigo **
-** Megan Man-Omega tiene armadura, el golpe no le afecta (tanto) **
-** El complejo de Dios de Megan Man-Omega no lo vuelve inmortal, perdio 10 de vida **
-** A MeganMan le quedan 52 puntos de vida. **
-** 
-Dittu atacará a MeganMan
+** Korby-WaddleDee se transformo en ninja y se tasajeo al rival **
+** Megan Man-Zero se defiende con su traje resistente **
+** MeganMan recibio un golpe por : 6. Su vida restante es 50
  **
-** Dittuu-JigglyPuff empezo cantando bien bonito **
-** Megan Man-Omega tiene armadura, el golpe no le afecta (tanto) **
-** El complejo de Dios de Megan Man-Omega no lo vuelve inmortal, perdio 18 de vida **
-** A MeganMan le quedan 34 puntos de vida. **
-** 
-MeganMan atacará a Dittu
+** Dittuu atacará a Korby
  **
-** Megan Man-Omega ocupo espada perforadora **
+** Dittuu-Mimikyu se cachetea al contrincante **
+** Korby-WaddleDee se defiende bien porque le cae bien al programador **
+** Korby recibio un golpe por : 3. Su vida restante es 96
+ **
+** MeganMan atacará a Korby
+ **
+** Mega Man-Zero ataca con la espada Sigma, porque no sabes demostrar **
+** Korby-WaddleDee se defiende bien porque le cae bien al programador **
+** Korby recibio un golpe por : 36. Su vida restante es 60
+ **
+** MeganMan atacará a Korby
+ **
+** Mega Man-Zero hace el ataque lightning, aventando muchos rayos laser **
+** Korby-WaddleDee se defiende bien porque le cae bien al programador **
+** Korby recibio un golpe por : 21. Su vida restante es 39
+ **
+** :::  Korby se comio una Korby-galleta   ::: **
+** ::: Korby se transformo en el Rey Dedede :::
+ **
+** :::  MeganMan se comio una MeganMan-bebida   ::: **
+** ::: MeganMan se transformo en Bass :::
+ **
+** :::  Dittuu se comio una Dittuu-gelatina   ::: **
+** ::: Dituu se transformo un JigglyPuff :::
+ **
+** MeganMan atacará a Dittuu
+ **
+** Mega Man-Bass ataca con su buster repetidamente **
 ** Dittuu-JigglyPuff se prepara para defenderse **
-** Perdió 10 puntos de vida **
-** A Dittu le quedan 79 puntos de vida. **
-** 
-::::Korby se ha comido una reyDeDeDe-galleta::::
+** Dittuu-JigglyPuff es algo fragil, su defensa no fue la mejor. **
+** Dittuu recibio un golpe por : 43. Su vida restante es 41 
  **
-** 
-::::MegaMan ha bebido una Zero-pocion::::
- **
-** 
-::::Dittuu se ha comido una Evee-sopa::::
- **
-** 
-Korby atacará a Dittu
+** Korby atacará a Dittuu
  **
 ** Korby-Dedede se burlo tanto de los otros oponentes que perdieron vida **
-** Se prepara para defenderse con cinta de Sol **
-** Perdió 9 puntos de vida **
-** A Dittu le quedan 70 puntos de vida. **
-** 
-Korby atacará a MeganMan
- **
-** Korby-Dedede conto un chiste de Eugenio Derbez, eso no le hizo daño a nadie. Pero fue un chiste tan malo que los demas perdieron vida **
-** Megan Man-Zero se defiende con su traje resistente **
-** Perdió 13 puntos de vida **
-** A MeganMan le quedan 21 puntos de vida. **
-** 
-Dittu atacará a MeganMan
- **
-** Dittuu-Evee ataca con su hermosa ternura **
-** Megan Man-Zero se defiende con su traje resistente **
-** Perdió 13 puntos de vida **
-** A MeganMan le quedan 8 puntos de vida. **
-** 
-::::Korby se ha comido una MetaKnight-galleta::::
- **
-** 
-::::MegaMan ha bebido una Bass-pocion::::
- **
-** 
-::::Dittuu se ha comido una JigglyPuff-sopa::::
- **
-** 
-Korby atacará a MeganMan
- **
-** Korby-Meta Knight ataca con turbo taladro, el mismo que usa tu vecino a las 6 de la mañana **
-** Megan Man-Bass se defiende esquivando los ataques en el aire **
-** Megan Man-Bass perdió 38 puntos de vida **
-** A MeganMan le quedan 0 puntos de vida. **
-** MeganMan ha quedado fuera de la pelea.  **
-** 
-Korby atacará a Dittu
- **
-** Korby-Meta Knight ataca con turbo taladro, el mismo que usa tu vecino a las 6 de la mañana **
 ** Dittuu-JigglyPuff se prepara para defenderse **
-** Perdió 38 puntos de vida **
-** A Dittu le quedan 32 puntos de vida. **
-** 
-Korby atacará a Dittu
+** Dittuu-JigglyPuff es algo fragil, su defensa no fue la mejor. **
+** Dittuu recibio un golpe por : 10. Su vida restante es 31 
  **
-** Korby-Meta Knight ataca con un Megaataque **
-** Dittuu-JigglyPuff se prepara para defenderse **
-** Perdió 23 puntos de vida **
-** A Dittu le quedan 9 puntos de vida. **
-** 
-::::Korby se ha comido una reyDeDeDe-galleta::::
+** Dittuu atacará a Korby
  **
-** 
-::::Dittuu se ha comido una JigglyPuff-sopa::::
+** Dittuu-JigglyPuff ataco cantando bien bonito **
+** Korby-Dedede nunca tomo clases de defensa personal, pero al menos intento meter las manos. **
+** Korby recibio un golpe por : 17. Su vida restante es 22
  **
-** 
-Korby atacará a Dittu
+** MeganMan atacará a Korby
  **
-** Korby-Dedede hizo un lanzamiento de gordo **
-** Mimikyu es bueno para evitar los golpes **
-** Sin emargo aun asi lograron lastimarlo, perdio 7 de vida **
-** A Dittu le quedan 2 puntos de vida. **
-** 
-Korby atacará a Dittu
+** Mega Man-Bass ataca con su buster repetidamente **
+** Korby-Dedede nunca tomo clases de defensa personal, pero al menos intento meter las manos. **
+** Korby recibio un golpe por : 42. Su vida restante es 0
  **
-** Korby-Dedede conto un chiste de Eugenio Derbez, eso no le hizo daño a nadie. Pero fue un chiste tan malo que los demas perdieron vida **
-** Mimikyu es bueno para evitar los golpes **
-** Sin emargo aun asi lograron lastimarlo, perdio 12 de vida **
-** A Dittu le quedan 0 puntos de vida. **
-** Dittu ha quedado fuera de la pelea.  **
-Felicidades! ganó tu peleador favorito: Korby
+** ¡¡¡¡¡¡Korby ha quedado fuera de la pelea. !!!!!! **
+** :::  MeganMan se comio una MeganMan-bebida   ::: **
+** ::: MeganMan se transformo en Omega :::
+ **
+** :::  Dittuu se comio una Dittuu-gelatina   ::: **
+** ::: Dittuu se transformo en Evee :::
+ **
+** MeganMan atacará a Dittuu
+ **
+** MeganMan-Omega ocupo un ataque cuyo nombre no podemos mencionar, 
+ya que tenemos miedo de que cierta empresa que empieza con N y acaba con endo, nos demande.
+ Pero es muy poderoso, creanos. **
+** Dituu-Eve se defiende con cinta de Sol **
+** Dittuu recibio un golpe por : 13. Su vida restante es 18 
+ **
+** MeganMan atacará a Dittuu
+ **
+** Megan Man-Omega ocupo espada perforadora **
+** Dituu-Eve se defiende con cinta de Sol **
+** Dittuu recibio un golpe por : 9. Su vida restante es 9 
+ **
+** Dittuu atacará a MeganMan
+ **
+** Dittuu-Evee ataca con un golpe elite **
+** Megan Man-Omega tiene armadura, el golpe no le afecta (tanto) **
+** El complejo de Dios de Megan Man-Omega no lo vuelve inmortal **
+** MeganMan recibio un golpe por : 33. Su vida restante es 17
+ **
+** MeganMan atacará a Dittuu
+ **
+** Megan Man-Omega ocupo espada perforadora **
+** Dituu-Eve se defiende con cinta de Sol **
+** Dittuu recibio un golpe por : 9. Su vida restante es 0 
+ **
+** ¡¡¡¡¡¡Dittuu ha quedado fuera de la pelea. !!!!!! **
+** :::  MeganMan se comio una MeganMan-bebida   ::: **
+** ::: MeganMan se transformo en Omega :::
+ **
+Felicidades! ganó tu peleador favorito: MeganMan
